@@ -22,9 +22,7 @@ library(readr)
 
 # 1. Data
 
-setwd("C:/Users/junhw/OneDrive - The Pennsylvania State University/Graduate Study/Other works/Enslaved community mobility")
-
-edges <- read.csv("C:/Users/junhw/OneDrive - The Pennsylvania State University/Graduate Study/Other works/Enslaved community mobility/WeightedEdgelist_JH.csv", 
+edges <- read.csv("https://raw.githubusercontent.com/JoonHwang-psu/EnslavedMobilityNetwork/refs/heads/main/WeightedEdgelist_JH.csv", 
                   stringsAsFactors = FALSE)
 
 # 2. overall mobility diversity and entropy
@@ -948,3 +946,4 @@ print(round(cbind(IRR = zinb_count_irr, zinb_count_ci), 3))
 
 cat("\n--- ZINB Model (Zero-inflation part: OR) ---\n")
 print(round(cbind(OR = zinb_zero_or, zinb_zero_ci), 3))
+
